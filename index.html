@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanban Board</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="card">
+        <div class="head">
+            <h1>KANBAN Board</h1>
+            <div class="add_board_and_task_btn">
+
+                <button class="button" onclick="createNewBoard()">Create New Board</button>
+                <button class="button" onclick="addTask()">Add Task</button>
+            </div>
+
+        </div>
+        <div class="task_board_container" id="taskBoardContainer">
+
+            <!-- <div class="task_board" id="task_board_1">
+                <div class="task_board_header">
+                    <div class="tools">
+                        <div class="circle">
+                            <span class="red box"></span>
+                        </div>
+                        <div class="circle">
+                            <span class="yellow box"></span>
+                        </div>
+                        <div class="circle">
+                            <span class="green box"></span>
+                        </div>
+                    </div>
+                    <h2 class="task_board_title">Pending</h2>
+                </div>
+                <div class="task_box" draggable="true" >
+                    <div class="task_content">
+                        <p>Mar 07, 2025, 11:00 AM
+                        <p>
+                        <h3>Task 1</h3>
+                    </div>
+                    <div class="task_button_div">
+                        <button class="task_butons edit" onclick="editTask(this)">E</button>
+                        <button class="task_butons delete" onclick="deleteTask(this)">D</button>
+                    </div>
+                </div>
+            </div> -->
+
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>

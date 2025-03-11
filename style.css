@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+}
+
+body {
+    height: 100vh;
+    background-color: bisque;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card {
+    font-family: Montserrat, sans-serif;
+    width: 90vw;
+    height: 100vh;
+    background: #ff66a3;
+    border: 3px solid #000000;
+    box-shadow: 12px 12px 0 #000000;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    margin: 0 auto;
+}
+
+.head {
+    font-family: Montserrat, sans-serif;
+    font-size: 14px;
+    font-weight: 900;
+    width: 100%;
+    background: #ffffff;
+    padding: 5px 12px;
+    color: #000000;
+    border-bottom: 3px solid #000000;
+    display: flex;
+    justify-content: space-between;
+}
+
+.add_board_and_task_btn {
+    display: flex;
+    gap: 10px;
+}
+
+.task_board_container {
+    padding: 8px 12px;
+    font-size: 14px;
+    font-weight: 600;
+    color: white;
+    background-color: #1ac2ff;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    height: 100%;
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+
+
+.button {
+    padding: 5px 10px;
+    border: 3px solid #000000;
+    box-shadow: 3px 3px 0 #000000;
+    font-weight: 750;
+    background: #4ade80;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.button:hover {
+    translate: 1.5px 1.5px;
+    box-shadow: 1.5px 1.5px 0 #000000;
+    background: #1ac2ff;
+}
+
+.task_board {
+    font-family: Montserrat, sans-serif;
+    width: 300px;
+    height: 90%;
+    flex-shrink: 0;
+    background: hsl(336, 100%, 70%);
+    border: 3px solid #000000;
+    box-shadow: 12px 12px 0 #000000;
+    transition: all 0.3s ease;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    /* background: #c7c7ff; */
+}
+
+.task_board.drag-over {
+    border: 2px dashed #333;
+    background: #e0e0e0;
+}
+
+.custom-text {
+    font-size: 12px;
+    font-family: inherit;
+    font-weight: 600;
+}
+
+.text--3 {
+    color: rgba(66, 193, 110, 1);
+}
+
+.task_box {
+    padding: 0.35rem;
+    display: flex;
+    gap: 8px;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: 2px solid #000;
+    background-color: #fff;
+    color: #000;
+    position: relative;
+    transition: all 0.2s ease;
+    box-shadow: 2px 2px 0 #000;
+    overflow: hidden;
+    text-decoration: none;
+    margin-bottom: 10px;
+    cursor: move;
+    user-select: none;
+}
+
+.task_box.dragging {
+    opacity: 0.5;
+}
+
+
+.task_button_div {
+    display: flex;
+    column-gap: 10px;
+}
+
+.task_button_div .task_buttons {
+    width: 30px;
+    height: 30px;
+    padding: 0.15rem;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: 2px solid #000;
+    color: #ffffff;
+    transition: all 0.2s ease;
+    box-shadow: 2px 2px 0 #000;
+}
+
+.task_button_div .task_buttons.edit {
+    background-color: rgb(7, 177, 7);
+}
+
+.task_button_div .task_buttons.delete {
+    background-color: red;
+}
+
+.task_board_header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.task_board_title {
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 900;
+    color: #fff;
+    font-stretch: extra-expanded;
+    text-transform: uppercase;
+}
+
+.task_content p {
+    font-weight: 600;
+    font-size: 0.8rem;
+    margin-bottom: 2px;
+    color: #00000090;
+}
+
+
+
+.tools {
+    display: flex;
+    align-items: center;
+    padding: 9px;
+}
+
+.circle {
+    padding: 0 4px;
+}
+
+.box {
+    display: inline-block;
+    align-items: center;
+    width: 10px;
+    height: 10px;
+    padding: 1px;
+    border-radius: 50%;
+}
+
+.red {
+    background-color: #ff605c;
+}
+
+.yellow {
+    background-color: #ffbd44;
+}
+
+.green {
+    background-color: #00ca4e;
+}
+
+
+
+
+
+
+
+
